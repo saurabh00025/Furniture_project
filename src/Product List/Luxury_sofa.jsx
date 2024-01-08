@@ -112,7 +112,7 @@ const Luxury_sofa = () => {
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       
         <div class="col-4">
-            <Link to = "/Modern_couch" class="block mb-4">
+            <Link to = "/Lounger_armchair" class="block mb-4">
                 <img src="images/product-1.jpg" alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Lounger Armchair</h4>
@@ -121,7 +121,7 @@ const Luxury_sofa = () => {
         </div>
 
         <div class="col-4">
-            <Link to = "/Wolf_rokoko" class="block mb-4">
+            <Link to = "/Modern_couch" class="block mb-4">
                 <img src="images/mcouch1.png" alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Modern Couch</h4>

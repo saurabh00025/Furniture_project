@@ -22,9 +22,12 @@ const home = () => {
             CrEaTiViTy In EvErY ExPlOsIoN iNnOvAtEs yOu,<br />
             InNoVaTe YoUr HoMe, ShApInG yOuR nEeD tO mEeT tHe FuTuRe.
           </p>
-          <button className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">
+          <div class = "py-2">
+
+          </div>
+          <Link to = "/products" className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">
             Explore Now
-          </button>
+          </Link>
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0">
           <img
@@ -65,7 +68,7 @@ const home = () => {
         </div>
         <div class = "py-32">
         <div class="col-2 py-32 px-4 " >
-          <p class = "text-2xl">Exclusively available on En'decore</p>
+          <p class = "text-2xl">Exclusively available</p>
           <h1 class="text-5xl font-bold py-2">Luxury Grey Sofa</h1>
           <Five_star/>
           <div class = "py-10"> 
