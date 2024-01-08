@@ -44,6 +44,7 @@ const LatestProduct = () => {
           </div>
 
 
+
           <div className="col-span-1">
             <Link to="/Computer_table">
               <img src="images/comptable1.png" alt="" />
