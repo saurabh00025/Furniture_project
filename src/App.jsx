@@ -8,7 +8,7 @@ import Faq from './components/faq.jsx';
 import Products from './components/products.jsx';
 import Navigation from './components/Navigation.jsx';
 import FeaturedProduct from './components/FeaturedProduct.jsx';
-import LatestProduct from './components/LatestProduct.jsx';
+import LatestProduct from './components/latestProduct.jsx';
 import Four_star from './components/four_star.jsx';
 import Five_star from './components/five_star.jsx';
 import Footer from './components/footer.jsx';

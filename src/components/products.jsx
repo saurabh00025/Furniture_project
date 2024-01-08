@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import FeaturedProduct from "./FeaturedProduct";
-import LatestProduct from "./LatestProduct";
+import LatestProduct from "./latestProduct";
 import Footer from './footer';
 const products = () => {
   return (

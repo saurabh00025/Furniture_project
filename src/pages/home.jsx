@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import FeaturedProduct from "../components/FeaturedProduct";
-import LatestProduct from "../components/LatestProduct";
+import LatestProduct from "../components/latestProduct";
 import Five_star from '../components/five_star';
 import Four_star from '../components/four_star';
 import Footer from '../components/footer';
