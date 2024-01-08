@@ -24,6 +24,7 @@ const home = () => {
           </p>
           <div class = "py-2">
 
+
           </div>
           <Link to = "/products" className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">
             Explore Now

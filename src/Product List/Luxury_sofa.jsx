@@ -120,6 +120,7 @@ const Luxury_sofa = () => {
             <p class="text-lg">$250.00</p>
         </div>
 
+
         <div class="col-4">
             <Link to = "/Modern_couch" class="block mb-4">
                 <img src="images/mcouch1.png" alt="" class="w-full h-auto"/>
