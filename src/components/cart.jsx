@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import foyerImage from '/images/foyer1.png';
-import futonImage from '/images/futon1.png';
-import armchairImage from '/images/aarmchair1.png';
+import images from '../images';
 import Footer from './footer';
 const cart = () => {
     const [cartItems, setCartItems] = useState([
@@ -56,10 +54,10 @@ const cart = () => {
                   <img
                     src={
                       item.id === 1
-                        ? foyerImage
+                        ? images.foyer1
                         : item.id === 2
-                        ? futonImage
-                        : armchairImage
+                        ? images.futon1
+                        : images.aarmchair1
                     }
                     alt={item.name}
                     className="w-16 h-16 object-cover rounded"

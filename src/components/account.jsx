@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import Footer from './footer';
+import images from '../images';
 
 const account = () => {
   
@@ -8,7 +9,7 @@ const account = () => {
       <div class="py-12 bg-gradient-to-br from-gray-200 via-pink-200 to-indigo-200">
     <div class="container mx-auto flex items-center ">
             <div class="w-1/2 p-4">
-                <img id="accpgimg" src="images/image1.png" className="w-full h-full object-cover max-w-md rounded-lg" alt="Account Image"/>
+                <img id="accpgimg" src={images.image1} className="w-full h-full object-cover max-w-md rounded-lg" alt="Account Image"/>
             </div>
             <div className="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto">
           <div className="bg-white bg-opacity-50 p-8 rounded-md max-w-md w-full text-center">

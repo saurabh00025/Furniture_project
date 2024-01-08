@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Five_star from '../components/five_star';
 import Four_star from '../components/four_star';
 import Footer from '../components/footer';
-
+import images from '../images';
 const Foyer_table = () => {
   const [value, setValue] = useState(1);
 
@@ -22,10 +22,10 @@ const Foyer_table = () => {
   };
 
     const thumbnails = [
-      'images/foyer2.png',
-      'images/foyer3.png',
-      'images/foyer4.png',
-      'images/foyer5.png',
+      images.foyer2,
+      images.foyer3,
+      images.foyer4,
+      images.foyer5,
     ];
   
     const changeImage = (imagePath) => {
@@ -37,7 +37,7 @@ const Foyer_table = () => {
       <div className="container mx-auto p-3 rounded-lg shadow-lg">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 mb-4 md:mb-0">
-      <img src="images/foyer1.png" className="w-full rounded-lg main-image" alt="Product" />
+      <img src={images.foyer1} className="w-full rounded-lg main-image" alt="Product" />
 
       <div className="flex justify-between mt-4 space-x-4">
         {thumbnails.map((thumbnail, index) => (
@@ -111,7 +111,7 @@ const Foyer_table = () => {
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div class="col-4">
             <Link to = "/Computer_table" class="block mb-4">
-                <img src="images/comptable1.png" alt="" class="w-full h-auto"/>
+                <img src={images.comptable1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Computer Table</h4>
             <Five_star/>
@@ -120,7 +120,7 @@ const Foyer_table = () => {
 
         <div class="col-4">
             <Link to = "/Antique_table" class="block mb-4">
-                <img src="images/antique1.png" alt="" class="w-full h-auto"/>
+                <img src={images.antique1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Antique Table</h4>
             <Five_star/>
@@ -129,7 +129,7 @@ const Foyer_table = () => {
 
         <div class="col-4">
             <Link to = "/Shiny_table" class="block mb-4">
-                <img src="images/tableshiny1.png" alt="" class="w-full h-auto"/>
+                <img src={images.tableshiny1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Shiny Table</h4>
             <Five_star/>
@@ -138,7 +138,7 @@ const Foyer_table = () => {
 
         <div class="col-4">
             <Link to = "/Egyptian_table" class="block mb-4">
-                <img src="images/egtable1.png" alt="" class="w-full h-auto"/>
+                <img src={images.egtable1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Egyptian Table</h4>
             <Five_star/>

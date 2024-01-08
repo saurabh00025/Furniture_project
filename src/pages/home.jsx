@@ -4,6 +4,7 @@ import LatestProduct from "../components/latestProduct";
 import Five_star from '../components/five_star';
 import Four_star from '../components/four_star';
 import Footer from '../components/footer';
+import images from '../images';
 const home = () => {
   const sofa = {
     background: 'radial-gradient(#fff, #ffd6d6)'
@@ -32,7 +33,7 @@ const home = () => {
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0">
           <img
-            src="images/back1.jpg"
+            src = {images.back1}
             alt="Aesthetic Taste"
             className="w-full h-auto rounded-md"
           />
@@ -41,13 +42,13 @@ const home = () => {
       </div>
       <div className = "flex space-x-2 py-20 px-20">
     <div className = "flex-none w-1/3 px-5">
-        <img src="images/category-1.jpg" alt="" class="w-full h-auto rounded-md" />
+        <img src = {images.category_1} alt="" class="w-full h-auto rounded-md" />
     </div>
     <div className = "flex-none w-1/3 px-5">
-        <img src="images/category-2.jpg" alt="" class="w-full h-auto rounded-md" />
+        <img src={images.category_2} alt="" class="w-full h-auto rounded-md" />
     </div>
     <div className = "flex-none w-1/3 px-5">
-        <img src="images/category-3.jpg" alt="" class="w-full h-auto rounded-md" />
+        <img src={images.category_3} alt="" class="w-full h-auto rounded-md" />
     </div>
 </div>
     <h1 className="text-center font-bold text-black text-3xl underline-red text-gray-500">Featured Products</h1>
@@ -65,7 +66,7 @@ const home = () => {
     <div class="px-20 " style = {sofa}>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="col-2">
-          <img src="images/expprod.png" class="offer-img" alt="" />
+          <img src={images.expprod} class="offer-img" alt="" />
         </div>
         <div class = "py-32">
         <div class="col-2 py-32 px-4 " >
@@ -93,7 +94,7 @@ Your team has an amazing gift to transform your home from ordinary to outstandin
 Working with Decor was such a pleasure that I am tempted to move just so we can start all over again! I know you will continue to brighten many lives; thank you for your part in ours!
         </p>
         <div class = "px-32"><Four_star/></div>
-        <img src="images/mayank.jpeg" alt="" class="mt-4 mx-auto block rounded-full w-16 h-16"/>
+        <img src={images.mayank} alt="" class="mt-4 mx-auto block rounded-full w-16 h-16"/>
         <h3 class="text-center text-xl font-bold mt-2 py-2">Mayank Dass</h3>
       </Link>
 
@@ -104,7 +105,7 @@ Working with Decor was such a pleasure that I am tempted to move just so we can 
           I just wanted to say thanks for the consultation – so helpful and informative! We're very excited about turning our space into our place. I am so glad that I stumbled across Interior Icons. It has the style of furniture that I love most, and it offers its items at prices that meet my budget. I am hooked. 
         </p>
         <div class = "px-32"><Four_star/></div>
-        <img src="images/shivani.png" alt="" class="mt-4 mx-auto block rounded-full w-16 h-16"/>
+        <img src={images.shivani} alt="" class="mt-4 mx-auto block rounded-full w-16 h-16"/>
         <h3 class="text-center text-xl font-bold mt-2">Shivani Kumari</h3>
       </Link>
 
@@ -114,7 +115,7 @@ Working with Decor was such a pleasure that I am tempted to move just so we can 
           When looking around for new furniture, my spouse happened to click on an ad for Interior Icons. Game changer! I'll never shop elsewhere for furniture again. To say I'm happy is an understatement.
         </p>
         <div class = "px-32"><Five_star/></div>
-        <img src="images/shailendra.jpg" alt="" class="mt-4 mx-auto block rounded-full w-16 h-16"/>
+        <img src={images.shailendra} alt="" class="mt-4 mx-auto block rounded-full w-16 h-16"/>
         <h3 class="text-center text-xl font-bold mt-2">Shailendra Kumar</h3>
       </Link>
     </div>
@@ -123,11 +124,11 @@ Working with Decor was such a pleasure that I am tempted to move just so we can 
 
   <div class="container mx-auto">
     <div class="py-20 grid grid-cols-1 md:grid-cols-5 gap-4">
-      <Link><img src="images/logo-godrej.png" alt="" class="mx-auto" /></Link>
-      <Link><img src="images/logo-oppo.png" alt="" class="mx-auto" /></Link>
-      <Link><img src="images/logo-paypal.png" alt="" class="mx-auto" /></Link>
-      <Link><img src="images/logo-philips.png" alt="" class="mx-auto" /></Link>
-      <Link><img src="images/logo-coca-cola.png" alt="" class="mx-auto" /></Link>
+      <Link><img src={images.logoGodrej} alt="" class="mx-auto" /></Link>
+      <Link><img src={images.logoOppo} alt="" class="mx-auto" /></Link>
+      <Link><img src={images.logoPaypal} alt="" class="mx-auto" /></Link>
+      <Link><img src={images.logoPhilips} alt="" class="mx-auto" /></Link>
+      <Link><img src={images.logoCocaCola} alt="" class="mx-auto" /></Link>
   </div>
 </div>
     </div>

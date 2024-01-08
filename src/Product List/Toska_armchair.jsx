@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Five_star from '../components/five_star';
 import Four_star from '../components/four_star';
 import Footer from '../components/footer';
-
+import images from '../images';
 const Toska_armchair = () => {
   const [value, setValue] = useState(1);
 
@@ -22,10 +22,10 @@ const Toska_armchair = () => {
   };
 
   const thumbnails = [
-    'images/toskaarm2.png',
-    'images/toskaarm3.png',
-    'images/toskaarm4.png',
-    'images/toskaarm5.png',
+    images.toskaarm2,
+    images.toskaarm3,
+    images.toskaarm4,
+    images.toskaarm5,
   ];
 
   const changeImage = (imagePath) => {
@@ -37,7 +37,7 @@ const Toska_armchair = () => {
       <div className="container mx-auto p-3 rounded-lg shadow-lg">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 mb-4 md:mb-0">
-      <img src="images/toskaarm1.png" className="w-full rounded-lg main-image" alt="Product" />
+      <img src={images.toskaarm1} className="w-full rounded-lg main-image" alt="Product" />
 
       <div className="flex justify-between mt-4 space-x-4">
         {thumbnails.map((thumbnail, index) => (
@@ -113,7 +113,7 @@ const Toska_armchair = () => {
 
         <div class="col-4">
             <Link to = "/Lounger_armchair" class="block mb-4">
-                <img src="images/product-1.jpg" alt="" class="w-full h-auto"/>
+                <img src={images.product_1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Lounger Armchair</h4>
             <Five_star/>
@@ -122,7 +122,7 @@ const Toska_armchair = () => {
 
         <div class="col-4">
             <Link to = "/Futon_armchair" class="block mb-4">
-                <img src="images/product-4.jpg" alt="" class="w-full h-auto"/>
+                <img src={images.product_4} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Futon Armchair</h4>
             <Four_star/>
@@ -131,7 +131,7 @@ const Toska_armchair = () => {
 
         <div class="col-4">
             <Link to = "/Armchair_patricia" class="block mb-4">
-                <img src="images/product-2.jpg" alt="" class="w-full h-auto"/>
+                <img src={images.product_2} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Armchair Patricia</h4>
             <Five_star/>
@@ -140,7 +140,7 @@ const Toska_armchair = () => {
 
         <div class="col-4">
             <Link to = "/Arm_chair" class="block mb-4">
-                <img src="images/armchair1.png" alt="" class="w-full h-auto"/>
+                <img src={images.armchair1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Arm Chair</h4>
             <Five_star/>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import images from '../images';
 
 const Footer = () => {
   return (
@@ -11,13 +12,13 @@ const Footer = () => {
           <p className="mb-4">Download our app for Android and iOS mobile phones</p>
           <div className="app-logo flex space-x-4">
             <Link>
-              <img src="images/play-store.png" alt="Play Store" className="w-36 h-12" />
+              <img src={images.playStore} alt="Play Store" className="w-36 h-12" />
             </Link>
             <Link to="#">
-              <img src="images/youtube.png" alt="YouTube" className="w-36 h-12" />
+              <img src={images.youtube} alt="YouTube" className="w-36 h-12" />
             </Link>
             <Link to="#">
-              <img src="images/app-store.png" alt="App Store" className="w-36 h-12" />
+              <img src={images.playStore} alt="App Store" className="w-36 h-12" />
             </Link>
           </div>
         </div>
@@ -25,7 +26,7 @@ const Footer = () => {
         {/* Footer Column 2 */}
         <div className="footer-col-2 flex items-center justify-center">
           <Link to = "/">
-          <img src="images/logo.gif" alt="Logo" className="rounded-full w-24 h-24" />
+          <img src={images.logo} alt="Logo" className="rounded-full w-24 h-24" />
           </Link>
         </div>
 

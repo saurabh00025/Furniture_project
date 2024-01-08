@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom';
 import Five_star from '../components/five_star';
-import Four_star from '../components/four_star';
 import Footer from '../components/footer';
+import images from '../images';
 
 const Armchair_patricia = () => {
   const [value, setValue] = useState(1);
@@ -22,10 +22,10 @@ const Armchair_patricia = () => {
   };
 
   const thumbnails = [
-    'images/armchair_pat-2.png',
-    'images/armchair_pat-3.png',
-    'images/armchair_pat-4.png',
-    'images/armchair_pat-5.png',
+    images.armchair_pat_2,
+    images.armchair_pat_3,
+    images.armchair_pat_4,
+    images.armchair_pat_5,
   ];
 
   const changeImage = (imagePath) => {
@@ -38,7 +38,7 @@ const Armchair_patricia = () => {
       <div className="container mx-auto p-3 rounded-lg shadow-lg">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 mb-4 md:mb-0">
-      <img src="images/armchair_pat-1.png" className="w-full rounded-lg main-image" alt="Product" />
+      <img src={images.armchair_pat_1} className="w-full rounded-lg main-image" alt="Product" />
 
       <div className="flex justify-between mt-4 space-x-4">
         {thumbnails.map((thumbnail, index) => (
@@ -112,7 +112,7 @@ const Armchair_patricia = () => {
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div class="col-4">
             <Link to = "/Lounger_armchair" class="block mb-4">
-                <img src="images/product-1.jpg" alt="" class="w-full h-auto"/>
+                <img src={images.product_1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Lounger Armchair</h4>
             <Five_star/>
@@ -121,7 +121,7 @@ const Armchair_patricia = () => {
 
         <div class="col-4">
             <Link to = "/Wolf_rokoko" class="block mb-4">
-                <img src="images/aarmchair1.png" alt="" class="w-full h-auto"/>
+                <img src={images.aarmchair1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Wolf Rokoko-Arm Chair</h4>
             <Five_star/>
@@ -130,7 +130,7 @@ const Armchair_patricia = () => {
 
         <div class="col-4">
             <Link to = "/Toska_armchair" class="block mb-4">
-                <img src="images/toskaarm1.png" alt="" class="w-full h-auto"/>
+                <img src={images.toskaarm1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Toska ArmChair</h4>
             <Five_star/>
@@ -139,7 +139,7 @@ const Armchair_patricia = () => {
 
         <div class="col-4">
             <Link to = "/Arm_chair" class="block mb-4">
-                <img src="images/armchair1.png" alt="" class="w-full h-auto"/>
+                <img src={images.armchair1} alt="" class="w-full h-auto"/>
             </Link>
             <h4 class="text-lg font-semibold">Arm Chair</h4>
             <Five_star/>
