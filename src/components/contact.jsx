@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 import Footer from './footer';
 const contact = () => {
   const bg = {
-    background: 'radial-gradient(#f2f2f2, #999999)'
+    background: 'radial-gradient(#aaffcc, #339966)'
   }
   return (
     <>
