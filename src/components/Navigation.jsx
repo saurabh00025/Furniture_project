@@ -3,9 +3,9 @@ import images from '../images';
 
 const Navigation = () => {
   return (
-    <nav className="container mx-auto font-semibold flex items-center justify-between py-4 mt-5">
+    <nav className="container mx-auto font-semibold flex items-center justify-between py-2 mt-5">
       <Link to="/">
-        <img className="rounded-full ml-2" style={{ height: 70 }} src = {images.logo} alt="logo" />
+        <img className="rounded-full ml-2" style={{ height: 140 }} src = {images.logo} alt="logo" />
       </Link>
       <ul className="flex items-center space-x-6">
         <li><Link to="/" className="nav-link">Home</Link></li>

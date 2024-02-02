@@ -26,7 +26,7 @@ const Footer = () => {
         {/* Footer Column 2 */}
         <div className="footer-col-2 flex items-center justify-center">
           <Link to = "/">
-          <img src={images.logo} alt="Logo" className="rounded-full w-24 h-24" />
+          <img src={images.logo} alt="Logo" className="rounded-full" style={{ height: 140 }} />
           </Link>
         </div>
 
