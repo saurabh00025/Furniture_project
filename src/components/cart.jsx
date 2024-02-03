@@ -121,32 +121,32 @@ const Cart = () => {
               </div>
             )}
 
-            <div>
-              <div className="bg-white rounded-md shadow-md">
-                <div className="w-1/2 ml-auto border-b-4 border-red-500 w-30 rounded-full"></div>
+      
+      <div class="flex justify-center">
+      <div class="bg-white rounded-md shadow-md w-full max-w-md">
+        <div class="border-b-4 border-red-500 rounded-full"></div>
+        <div class="px-6 py-4">
+        <div class="text-center font-semibold text-lg mb-4">Summary</div>
+        <div class="flex justify-between mb-2">
+        <div>Subtotal</div>
+        <div>${calculateTotalWithoutTax()}</div>
+      </div>
+      <div class="flex justify-between mb-2">
+        <div>SGST (2.5%)</div>
+        <div>${(calculateTotalWithoutTax() * 0.025).toFixed(2)}</div>
+      </div>
+      <div class="flex justify-between mb-2">
+        <div>CGST (2.5%)</div>
+        <div>${(calculateTotalWithoutTax() * 0.025).toFixed(2)}</div>
+      </div>
+      <div class="flex justify-between mt-4">
+        <div class="font-bold">Total</div>
+        <div class="font-bold">${calculateTotal()}</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <table className="ml-96">
-                  <tbody className=" ml-auto">
-                    <tr className="">
-                      <td className="py-2 px-96 font-semibold">Subtotal</td>
-                      <td className="py-2 px-4 ">${calculateTotalWithoutTax()}</td>
-                    </tr>
-                    <tr className="">
-                      <td className="py-2 px-96 font-semibold">SGST (2.5%)</td>
-                      <td className="py-2 px-4">${(calculateTotalWithoutTax() * 0.025).toFixed(2)}</td>
-                    </tr>
-                    <tr className="">
-                      <td className="py-2 px-96 font-semibold">CGST (2.5%)</td>
-                      <td className="py-2 px-4">${(calculateTotalWithoutTax() * 0.025).toFixed(2)}</td>
-                    </tr>
-                    <tr className="">
-                      <td className="font-bold text-2xl py-2 px-96 font-semibold">Total</td>
-                      <td className="py-2 px-4 text-2xl font-bold">${calculateTotal()}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
             <div className="py-3"></div>
           </>
         )}
