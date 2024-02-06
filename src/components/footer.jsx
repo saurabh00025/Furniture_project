@@ -3,7 +3,7 @@ import images from '../images';
 
 const Footer = () => {
   return (
-    <div className="bg-pink-300 text-white py-8">
+    <div className=" py-8" style = {{background: '#f2e9e9'}}>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         
         {/* Footer Column 1 */}
@@ -26,7 +26,7 @@ const Footer = () => {
         {/* Footer Column 2 */}
         <div className="footer-col-2 flex items-center justify-center">
           <Link to = "/">
-          <img src={images.logo} alt="Logo" className="rounded-full" style={{ height: 140 }} />
+          <img src={images.logo} alt="Logo" className="rounded-full" style={{ height: 100 }} />
           </Link>
         </div>
 

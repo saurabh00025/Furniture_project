@@ -3,7 +3,7 @@ import Home from './pages/home.jsx';
 import About from './components/about.jsx';
 import Account from './components/account.jsx';
 import Blogs from './components/blogs.jsx';
-import Contact from './components/contact.jsx';
+import Contact from './components/contact/contact.jsx';
 import Faq from './components/faq.jsx';
 import Products from './components/products.jsx';
 import Navigation from './components/Navigation.jsx';
@@ -11,7 +11,6 @@ import FeaturedProduct from './components/FeaturedProduct.jsx';
 import LatestProduct from './components/latestProduct.jsx';
 import Four_star from './components/four_star.jsx';
 import Five_star from './components/five_star.jsx';
-import Footer from './components/footer.jsx';
 import Cart from './components/cart.jsx';
 import Antique_table from './Product List/Antique_table.jsx';
 import Arm_chair from './Product List/Arm_chair.jsx';
@@ -48,7 +47,6 @@ const App = () => {
         <Route path = "/latestProduct" element = {<LatestProduct />} />
         <Route path = "/five_star" element = {<Five_star/>}/>
         <Route path = "four_star" element = {<Four_star/>}/>
-        <Route path = "footer" element = {<Footer/>} />
         <Route path = "cart" element = {<Cart/>} />
         <Route path = "Antique_table" element = {<Antique_table/>} />
         <Route path = "Arm_chair" element = {<Arm_chair/>} />
