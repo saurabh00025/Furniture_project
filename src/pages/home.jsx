@@ -40,6 +40,7 @@ const home = () => {
         </div>
       </div>
       </div>
+      
       <div className = "flex space-x-2 py-20 px-20">
     <div className = "flex-none w-1/3 px-5">
         <img src = {images.category_1} alt="" class="w-full h-auto rounded-md" />
@@ -124,11 +125,11 @@ Working with Decor was such a pleasure that I am tempted to move just so we can 
 
   <div class="container mx-auto">
     <div class="py-20 grid grid-cols-1 md:grid-cols-5 gap-4">
-      <Link><img src={images.logoGodrej} alt="" class="mx-auto" /></Link>
-      <Link><img src={images.logoOppo} alt="" class="mx-auto" /></Link>
-      <Link><img src={images.logoPaypal} alt="" class="mx-auto" /></Link>
-      <Link><img src={images.logoPhilips} alt="" class="mx-auto" /></Link>
-      <Link><img src={images.logoCocaCola} alt="" class="mx-auto" /></Link>
+      <Link to = "https://www.godrej.com/" target = "_blank"><img src={images.logoGodrej} alt="" class="mx-auto" /></Link>
+      <Link to = "https://www.oppo.com/" target = "_blank"><img src={images.logoOppo} alt="" class="mx-auto" /></Link>
+      <Link to = "https://www.paypal.com/" target = "_blank"><img src={images.logoPaypal} alt="" class="mx-auto" /></Link>
+      <Link to = "https://www.philips.com/" target = "_blank"><img src={images.logoPhilips} alt="" class="mx-auto" /></Link>
+      <Link to = "https://www.coca-cola.com/" target = "_blank"><img src={images.logoCocaCola} alt="" class="mx-auto" /></Link>
   </div>
 </div>
     </div>
