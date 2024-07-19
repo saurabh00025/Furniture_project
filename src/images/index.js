@@ -19,6 +19,10 @@ import armchair3 from './armchair3.png';
 import armchair4 from './armchair4.png';
 import armchair5 from './armchair5.png';
 import back1 from './back1.jpg';
+import back2 from './back2.jpg';
+import back3 from './back3.jpg';
+import back4 from './back4.jpg';
+import back5 from './back5.jpg';
 import cart from './cart.png';
 import category_1 from './category-1.jpg';
 import category_2 from './category-2.jpg';
@@ -114,6 +118,10 @@ const images = {
   armchair4,
   armchair5,
   back1,
+  back2,
+  back3,
+  back4,
+  back5,
   cart,
   category_1,
   category_2,

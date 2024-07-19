@@ -5,6 +5,7 @@ import Five_star from '../components/five_star';
 import Four_star from '../components/four_star';
 import Footer from '../components/footer';
 import images from '../images';
+import ImageCarousel from './ImageCarousel.jsx';
 const home = () => {
   const sofa = {
     background: 'radial-gradient(#fff, #ffd6d6)'
@@ -25,18 +26,13 @@ const home = () => {
           </p>
           <div class = "py-2">
 
-
           </div>
           <Link to = "/products" className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">
             Explore Now
           </Link>
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0">
-          <img
-            src = {images.back1}
-            alt="Aesthetic Taste"
-            className="w-full h-auto rounded-md"
-          />
+          <ImageCarousel/>
         </div>
       </div>
       </div>
